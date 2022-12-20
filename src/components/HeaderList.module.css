@@ -1,0 +1,36 @@
+.headerlist {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.containercreatedtasks, .containercompletedtasks {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.containertextcreated {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.containertextcompleted {
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.containercountercreated, .containercountercompleted {
+    border-radius: 999px;
+    background-color: var(--gray-400);
+    width: max-content;
+    padding: 2px 8px;
+    color: var(--gray-200);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
