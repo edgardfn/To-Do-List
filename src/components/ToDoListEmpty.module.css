@@ -1,0 +1,28 @@
+.list {
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.list img {
+    margin-bottom: 1rem;
+}
+
+.list span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.list span:nth-last-of-type(1) {
+    color: var(--gray-400);
+}
+
+.list span:nth-last-of-type(2) {
+    color: var(--gray-300);
+}
