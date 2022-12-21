@@ -5,6 +5,7 @@ import './global.css';
 import styles from './App.module.css';
 import { HeaderList } from './components/HeaderList';
 import { ToDoListEmpty } from './components/ToDoListEmpty';
+import { ToDoList } from './components/ToDoList';
 
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
       <div className={styles.main}>
         <AddTask />
         <HeaderList />
-        <ToDoListEmpty />
+        {/* <ToDoListEmpty /> */}
+        <div className={styles.containerListTasks}>
+          <ToDoList />
+        </div>
       </div>
     </div>
   )
