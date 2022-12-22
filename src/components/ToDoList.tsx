@@ -8,12 +8,17 @@ interface ToDoListProps {
     text: string,
     done: boolean,
     onAlterSituationTask: (idTask: string) => void,
+    onDeleteTask: (idTask: string) => void,
 };
 
-export function ToDoList({id,text,done,onAlterSituationTask}:ToDoListProps) {
+export function ToDoList({id,text,done,onAlterSituationTask,onDeleteTask}:ToDoListProps) {
     
     function handleAlterSituationTask () {
         onAlterSituationTask(id);
+    }
+
+    function handleDeleteTask () {
+        onDeleteTask(id);
     }
 
 
@@ -29,7 +34,7 @@ export function ToDoList({id,text,done,onAlterSituationTask}:ToDoListProps) {
                 className={done ? styles.containerTextCompleted : styles.containerText}>
                 {text}
             </div>
-            <button title='Deletar tarefa'>
+            <button title='Deletar tarefa' onClick={handleDeleteTask}>
                 <Trash 
                     size={24} 
                     className={styles.iconTrash}

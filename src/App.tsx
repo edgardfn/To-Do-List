@@ -62,6 +62,16 @@ function App() {
     setTasks(newArrayTask);
   }
 
+  function deleteTask(idTask: string) {
+    const newArrayTasks = tasks.filter((item) => {
+      if(item.id !== idTask) {
+        return item;
+      };
+    });
+    updateNumbersOfCompletedTasksHeaderList(newArrayTasks);
+    setTasks(newArrayTasks);
+  }
+
   return (
     <div>
       <Header />
@@ -85,6 +95,7 @@ function App() {
                 done={item.done}
                 text={item.text}
                 onAlterSituationTask = {alterSituationTask}
+                onDeleteTask = {deleteTask}
               />
             })}
             
