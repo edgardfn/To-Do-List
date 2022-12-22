@@ -3,37 +3,24 @@ import imagecheck from '../assets/check.svg';
 import imagechecked from '../assets/checked.svg';
 import { Trash } from 'phosphor-react';
 
-export function ToDoList() {
-    return (
-        <>
-            <div className={styles.list}>
-                <img src={imagecheck} alt="Image check" />
-                <span>
-                    Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
-                </span>
-                <button title='Deletar tarefa'>
-                    <Trash size={24} className={styles.iconTrash}/>
-                </button>
-            </div>
-            <div className={styles.list}>
-                <img src={imagecheck} alt="Image check" />
-                <span>
-                    Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
-                </span>
-                <button title='Deletar tarefa'>
-                    <Trash size={24} className={styles.iconTrash}/>
-                </button>
-            </div>
-            <div className={styles.list}>
-                <img src={imagechecked} alt="Image check" />
-                <span>
-                    Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
-                </span>
-                <button title='Deletar tarefa'>
-                    <Trash size={24} className={styles.iconTrash}/>
-                </button>
-            </div>
-        </>
+interface ToDoListProps {
+    id: string,
+    text: string,
+    done: boolean,
+};
 
+export function ToDoList({id,text,done}:ToDoListProps) {
+    console.log('text ===', text);
+    console.log('id ===', id);
+    return (
+        <div className={styles.list}>
+            <img src={done ? imagechecked : imagecheck}  alt="Image check" />
+            <div className={styles.containerText}>
+                {text}
+            </div>
+            <button title='Deletar tarefa'>
+                <Trash size={24} className={styles.iconTrash}/>
+            </button>
+        </div>
     );
 }

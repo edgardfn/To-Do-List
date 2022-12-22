@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 1rem;
     gap: 0.75rem;
 }
@@ -32,6 +33,11 @@ img, span {
 .list button:hover {
     background-color: var(--gray-400);
     color: var(--danger);
+}
+
+.containerText {
+    text-align: left;
+    width: 100%;
 }
 
 /* .checkbox {

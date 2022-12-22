@@ -64,7 +64,16 @@ function App() {
           <ToDoListEmpty />
           :
           <div className={styles.containerListTasks}>
-            <ToDoList />
+            {tasks.map((item) => {
+              console.log('item =====', item);
+              return <ToDoList 
+                id={item.id}
+                key={item.id}
+                done={item.done}
+                text={item.text}
+              />
+            })}
+            
           </div>
         }
         {/* <ToDoListEmpty /> */}
