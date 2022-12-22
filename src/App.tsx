@@ -48,6 +48,20 @@ function App() {
   console.log('tasks ====', tasks);
   const numberOfTasksCreated = tasks.length;
 
+  function alterSituationTask(idTask:string) {
+    const newArrayTask = tasks.map((item) => {
+      if(item.id === idTask) {
+        const newUpdateTask:Task = {
+          ...item,
+          done: item.done ? false : true,
+        }
+        return newUpdateTask;
+      } else return item;
+    });
+    updateNumbersOfCompletedTasksHeaderList(newArrayTask);
+    setTasks(newArrayTask);
+  }
+
   return (
     <div>
       <Header />
@@ -65,12 +79,12 @@ function App() {
           :
           <div className={styles.containerListTasks}>
             {tasks.map((item) => {
-              console.log('item =====', item);
               return <ToDoList 
                 id={item.id}
                 key={item.id}
                 done={item.done}
                 text={item.text}
+                onAlterSituationTask = {alterSituationTask}
               />
             })}
             

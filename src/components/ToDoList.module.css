@@ -38,6 +38,14 @@ img, span {
 .containerText {
     text-align: left;
     width: 100%;
+    cursor: pointer;
+}
+
+.containerTextCompleted {
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: line-through;
 }
 
 /* .checkbox {
