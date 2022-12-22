@@ -1,6 +1,12 @@
 import styles from './HeaderList.module.css';
 
-export function HeaderList() {
+interface HeaderListProps {
+    tasksCompleted: number,
+    tasksCreated: number,
+};
+
+export function HeaderList({tasksCompleted,tasksCreated}:HeaderListProps) {
+
     return (
         <div className={styles.headerlist}>
             <div className={styles.containercreatedtasks}>
@@ -8,7 +14,7 @@ export function HeaderList() {
                     Tarefas criadas
                 </div>
                 <div className={styles.containercountercreated}>
-                    10
+                    {tasksCreated}
                 </div>
             </div>
             <div className={styles.containercompletedtasks}>
@@ -16,7 +22,7 @@ export function HeaderList() {
                     Concluidas
                 </div>
                 <div className={styles.containercountercompleted}>
-                    2
+                    {tasksCompleted}
                 </div>
             </div>
         </div>

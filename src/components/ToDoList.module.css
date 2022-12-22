@@ -33,3 +33,28 @@ img, span {
     background-color: var(--gray-400);
     color: var(--danger);
 }
+
+/* .checkbox {
+    display: none;
+} */
+
+/* label {
+    display: none;
+} */
+
+/* label::before {
+    content: '';
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    box-sizing: border-box;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+label::before:hover {
+    border: 2px solid var(--blue-dark);
+    background-color: aqua;
+    border-radius: 30%;
+} */
