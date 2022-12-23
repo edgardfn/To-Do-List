@@ -1,7 +1,7 @@
 # To-Do-List
 
 <p align="center">
-  <img width="470" src="src/assets/to_readme/ToDoList.gif">
+  <img width="800" src="src/assets/to_readme/ToDoList.gif">
 </p>
 
 ## Description
