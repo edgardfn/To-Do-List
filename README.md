@@ -9,28 +9,28 @@
 
 ### Fotos
 <div>
-  <img width="45%" src="src/assets/to_readme/tela01.png">
+  <img width="100%" src="src/assets/to_readme/tela01.png">
 </div>
 <div>
-  <img width="45%" src="src/assets/to_readme/tela02.png">
+  <img width="100%" src="src/assets/to_readme/tela02.png">
 </div>
 </br>
 <p>
-  <img width="45%" src="src/assets/to_readme/tela03.png">
+  <img width="100%" src="src/assets/to_readme/tela03.png">
 </p>
 </br>
 <p>
-  <img width="45%" src="src/assets/to_readme/tela04.png">
+  <img width="100%" src="src/assets/to_readme/tela04.png">
 </p>
 </br>
 <p>
-  <img width="45%" src="src/assets/to_readme/tela05.png">
+  <img width="100%" src="src/assets/to_readme/tela05.png">
 </p>
 </br>
 <p>
-  <img width="45%" src="src/assets/to_readme/tela06.png">
+  <img width="100%" src="src/assets/to_readme/tela06.png">
 </p>
 </br>
 <p>
-  <img width="45%" src="src/assets/to_readme/tela07.png">
+  <img width="100%" src="src/assets/to_readme/tela07.png">
 </p>
